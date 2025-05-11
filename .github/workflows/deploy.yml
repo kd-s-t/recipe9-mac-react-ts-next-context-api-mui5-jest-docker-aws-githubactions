@@ -23,7 +23,7 @@ jobs:
           npm run test:ci
 
       - name: Setup SSH agent
-        uses: webfactory/ssh-agent@0.7.0
+        uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
 
