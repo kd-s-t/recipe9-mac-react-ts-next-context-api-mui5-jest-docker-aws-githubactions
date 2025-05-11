@@ -1,3 +1,4 @@
+# For Docker
 Example .env.stage (staging)
 ```env
 NEXT_PUBLIC_API_URL=https://staging.api.myapp.com
@@ -13,4 +14,13 @@ Usage commands
 docker composer -f devops/local/docker-compose.yml up --build -d
 docker composer -f devops/stage/docker-compose.yml up --build -d 
 docker composer -f devops/prod/docker-compose.yml up --build -d
+```
+
+# For Terraform
+Usage commands
+```bash
+terraform init
+terraform validate
+terraform plan
+terraform apply -var-file="stage/terraform.tfvars"
 ```
